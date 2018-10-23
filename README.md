@@ -27,7 +27,7 @@ To do that we need to run this set of commands in our command-line which will be
 
 # Laravel Application
 
-Let us embark to our main objective. So we have an application with has a database structure and has migrations with it. 
+Let us embark on our main objective. So we have an application with has a database structure and has migrations with it. 
 
 So as to fit in your shoes I will be assuming you have an application is fully ready to be in production.
 
@@ -41,7 +41,7 @@ Email [ben.developer.kenny@gmail.com]:
 
 ```
 
-Fill in your credentials and we now set to launch our production application.
+Fill in your credentials and we are now set to launch our production application.
 
 # Laravel Application Setup For Deployment
 
