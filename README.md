@@ -134,7 +134,7 @@ Remember to set your `DEBUG` to `false` so as to prevent leak of data.
 
 When you open your heroku dashboard to the settings panel and click on reveal config values, it should look like this.
 
-![config_vars](config_vars.png)
+![config_vars]
 
 # Configuring the Database
 
