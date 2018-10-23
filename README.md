@@ -204,6 +204,35 @@ $ git commit -m "Convert to use Heroku PostgreSQL database"
 $ git push heroku master
 ```
 
+# Pushing The Database
+
+We have two ways of pushing the database.
+
+## First Option
+If you want to start a fresh without anything you may the following command:
+
+```bash
+$ heroku run php /app/artisan migrate
+```
+
+## Second Option
+This is done if you want to push your local db to the database in heroku:
+
+```bash
+heroku pg:push <The name of the db in the local psql> DATABASE_URL --app <heroku-app>
+```
 
 
+## Open App
 
+You may now open your application :
+
+```bash
+$ heroku open
+```
+
+# Final Remarks
+
+This process is really confusing but I hope will help in your endevours.
+
+Remember heroku does not offer support for media files in the free tier subscription so find some where else to store those e.g UploadCare(I am making a [documentation](https://github.com/Benard18/Laravel-CloudShare-Intergration) based on this).
