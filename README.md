@@ -244,3 +244,8 @@ Remember heroku does not offer support for media files in the free tier subscrip
 +[Getting started with heroku laravel](https://devcenter.heroku.com/articles/getting-started-with-laravel)
 +[Best Practices](https://devcenter.heroku.com/articles/getting-started-with-laravel#best-practices)
 +[Further Reading](https://devcenter.heroku.com/articles/getting-started-with-laravel#further-reading)
+
+# Feedback
+This was written by:
+		[Ben Karanja](https://github.com/Benard18)
+Email me @ benkaranja43@gmail.com
