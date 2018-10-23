@@ -43,7 +43,28 @@ Email [ben.developer.kenny@gmail.com]:
 
 Fill in your credentials and we now set to launch our production application.
 
-### Laravel Application Setup
+### Laravel Application Setup For Deployment
+
+We will head to the project which you want to deploy as shown below:
+
+```bash
+$ cd <application name>
+
+```
+
+We will then create or initialize a git repository  and commit our current state
+
+```bash
+$git init
+$git add .
+$git commit -a -m "new Laravel project"
+```
+We will then add the remote git repo for the application by creating the application.
+
+```bash
+$heroku create <application-name>
+```
+
 
 
 
