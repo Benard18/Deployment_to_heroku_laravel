@@ -16,9 +16,9 @@ I will show you how to deploy an application which has a database and to be spec
 		2.Composer.
 		3.Heroku CLI.
 
-<!-- ### Heroku CLI
+#### Heroku CLI
 To have complete success, we would need the Heroku CLI in our local machine.
 
-To do that we need to run this set of commands in our command-line which will be found [here](https://cli.heroku.com/). -->
+To do that we need to run this set of commands in our command-line which will be found [here](https://cli.heroku.com/).
 
 
