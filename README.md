@@ -64,6 +64,18 @@ We will then add the remote git repo for the application by creating the applica
 ```bash
 $heroku create <application-name>
 ```
+This will consist of the git repo from heroku where we will host of application files.
+
+To deploy your application to Heroku, you must first create a Procfile, which tells Heroku what command to use to launch the web server with the correct settings. 
+
+#### Creating Procfile
+By default, Heroku will launch an Apache web server together with PHP to serve applications from the root directory of the project.
+However, your application’s document root is the public/ subdirectory, so you need to create a Procfile that [configures the correct document root](https://devcenter.heroku.com/articles/custom-php-settings#setting-the-document-root):
+
+```bash
+$ echo web: heroku-php-apache2 public/ > Procfile
+$ git commit -a -m "Procfile for Heroku"
+```
 
 
 
