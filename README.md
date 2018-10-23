@@ -5,17 +5,17 @@
 ## Introduction
 Welcome to a series of Deploying a Laravel Application.
 
-Laravel applications are deployed many sites.
+Laravel applications are deployed on many sites.
 
-I will show you how to deploy an application which has a database and to be specific, Postgresql Database.
+I will be taking you through on how to deploy a laravel application which has a database and to be specific, Postgresql Database.
 
 ## Prequisities
 + PHP (and ideally some Laravel) knowledge.
 + A Heroku user account: [SignUp is free and instant](https://signup.heroku.com/signup/dc)
 + Familiarity with [getting started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) guide, with the following things installed:
-		1.PHP.
-		2.Composer.
-		3.Heroku CLI.
+		+PHP.
+		+Composer.
+		+Heroku CLI.
 
 #### Heroku CLI
 To have complete success, we would need the Heroku CLI in our local machine.
