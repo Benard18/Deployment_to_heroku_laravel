@@ -244,10 +244,10 @@ Remember heroku does not offer support for media files in the free tier subscrip
 
 # Very Helpful Articles
 
-+[Configuring Postgre](https://mattstauffer.com/blog/laravel-on-heroku-using-a-postgresql-database/)
-+[Getting started with heroku laravel](https://devcenter.heroku.com/articles/getting-started-with-laravel)
-+[Best Practices](https://devcenter.heroku.com/articles/getting-started-with-laravel#best-practices)
-+[Further Reading](https://devcenter.heroku.com/articles/getting-started-with-laravel#further-reading)
++ [Configuring Postgre](https://mattstauffer.com/blog/laravel-on-heroku-using-a-postgresql-database/)
++ [Getting started with heroku laravel](https://devcenter.heroku.com/articles/getting-started-with-laravel)
++ [Best Practices](https://devcenter.heroku.com/articles/getting-started-with-laravel#best-practices)
++ [Further Reading](https://devcenter.heroku.com/articles/getting-started-with-laravel#further-reading)
 
 # Feedback
 This was written by:
