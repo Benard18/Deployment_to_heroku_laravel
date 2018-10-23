@@ -18,6 +18,8 @@ I will be taking you through on how to deploy a laravel application which has a 
 		+Heroku CLI.
 
 #### Heroku CLI
+
+![heroku-cli](https://pbs.twimg.com/media/CzuuE7dXAAA7np5.jpg)
 To have complete success, we would need the Heroku CLI in our local machine.
 
 To do that we need to run this set of commands in our command-line which will be found [here](https://cli.heroku.com/).
