@@ -249,3 +249,5 @@ Remember heroku does not offer support for media files in the free tier subscrip
 This was written by:
 		[Ben Karanja](https://github.com/Benard18)
 Email me @ benkaranja43@gmail.com
+
+![Heroku](https://buddy.works/guides/thumbnails/cover-heroku.png)
