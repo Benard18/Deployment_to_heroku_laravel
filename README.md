@@ -25,7 +25,7 @@ To have complete success, we would need the Heroku CLI in our local machine.
 To do that we need to run this set of commands in our command-line which will be found [here](https://cli.heroku.com/).
 
 
-## Laravel Application
+# Laravel Application
 
 Let us embark to our main objective. So we have an application with has a database structure and has migrations with it. 
 
@@ -43,7 +43,7 @@ Email [ben.developer.kenny@gmail.com]:
 
 Fill in your credentials and we now set to launch our production application.
 
-### Laravel Application Setup For Deployment
+# Laravel Application Setup For Deployment
 
 We will head to the project which you want to deploy as shown below:
 
@@ -77,7 +77,7 @@ $ echo web: heroku-php-apache2 public/ > Procfile
 $ git commit -a -m "Procfile for Heroku"
 ```
 
-### Setting environmental variables
+## Setting environmental variables
 By default Laravel offers the environmental variables in a file called .env. We will need to send the information. This is an example of how the env should look like
 
 ```txt
@@ -132,7 +132,7 @@ $ heroku config:set $(cat .env | sed '/^$/d; /#[[:print:]]*$/d')
 
 Remember to set your `DEBUG` to `false` so as to prevent leak of data.
 
-### Configuring the Database
+# Configuring the Database
 
 First, add the Heroku add-on for Postgresql. If you were using mysql I request you go to this [link](https://mattstauffer.com/blog/laravel-on-heroku-using-a-mysql-database).
 
@@ -155,7 +155,7 @@ Use `heroku addons:docs heroku-postgresql` to view documentation.
 
 As you can see the add-ons creates a database which is empty and doesn't contain any information. We would need to store information into it.
 
-By default you should have DATABASE_URL configuration created after installing postgres addon to heroku.
+By default you should have `DATABASE_URL` configuration created after installing postgres addon to heroku.
 
 At this point your database should be up and running. Now, let's edit your Laravel config to point to the PostgreSQL database.
 
