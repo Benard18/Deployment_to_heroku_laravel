@@ -9,7 +9,7 @@ Laravel applications are deployed on many sites.
 
 I will be taking you through on how to deploy a laravel application which has a database and to be specific, Postgresql Database.
 
-## Prequisities
+## Prerequisites
 + PHP (and ideally some Laravel) knowledge.
 + A Heroku user account: [SignUp is free and instant](https://signup.heroku.com/signup/dc)
 + Familiarity with [getting started with PHP on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php) guide, with the following things installed:
