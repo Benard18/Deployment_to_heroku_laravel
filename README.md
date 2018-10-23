@@ -78,7 +78,7 @@ $ git commit -a -m "Procfile for Heroku"
 ```
 
 ## Setting environmental variables
-By default Laravel offers the environmental variables in a file called .env. We will need to send the information. This is an example of how the env should look like
+By default Laravel offers the environmental variables in a file called .env. We will need to send the information to the heroku servers. This is an example of how the env should look like
 
 ```txt
 APP_NAME=Laravel
@@ -131,6 +131,10 @@ $ heroku config:set $(cat .env | sed '/^$/d; /#[[:print:]]*$/d')
 ```
 
 Remember to set your `DEBUG` to `false` so as to prevent leak of data.
+
+When you open your heroku dashboard to the settings panel and click on reveal config values, it should look like this.
+
+![config_vars](https://github.com/Benard18/Deployment_to_heroku_laravel/config_vars.png)
 
 # Configuring the Database
 
@@ -209,7 +213,7 @@ $ git push heroku master
 We have two ways of pushing the database.
 
 ## First Option
-If you want to start a fresh without anything you may the following command:
+If you want to start a fresh without anything you may run the following command:
 
 ```bash
 $ heroku run php /app/artisan migrate
@@ -233,7 +237,7 @@ $ heroku open
 
 # Final Remarks
 
-This process is really confusing but I hope will help in your endevours.
+This process is really confusing but I hope it will help in your endevours.
 
 Remember heroku does not offer support for media files in the free tier subscription so find some where else to store those e.g UploadCare(I am making a [documentation](https://github.com/Benard18/Laravel-CloudShare-Intergration) based on this).
 
