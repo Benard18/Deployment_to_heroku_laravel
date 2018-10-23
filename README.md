@@ -130,10 +130,79 @@ $ heroku config:set $(cat .env | sed '/^$/d; /#[[:print:]]*$/d')
 
 ```
 
-Remember to set your `DEBUG` to prevent leak of data.
+Remember to set your `DEBUG` to `false` so as to prevent leak of data.
+
+### Configuring the Database
+
+First, add the Heroku add-on for Postgresql. If you were using mysql I request you go to this [link](https://mattstauffer.com/blog/laravel-on-heroku-using-a-mysql-database).
+
+```bash
+$ heroku addons:create heroku-postgresql:hobby-dev
+
+```
+
+you should see an output like this:
+
+```bash
+Adding heroku-postgresql:hobby-dev on app-name-here... done, v14 (free)
+Attached as HEROKU_POSTGRESQL_COLOR_URL
+Database has been created and is available
+ ! This database is empty. If upgrading, you can transfer
+ ! data from another database with pgbackups:restore.
+Use `heroku addons:docs heroku-postgresql` to view documentation.
+
+```
+
+As you can see the add-ons creates a database which is empty and doesn't contain any information. We would need to store information into it.
+
+By default you should have DATABASE_URL configuration created after installing postgres addon to heroku.
+
+At this point your database should be up and running. Now, let's edit your Laravel config to point to the PostgreSQL database.
 
 
+#### Configuring the laravel to use PostgresSQL
 
+Once again, if this is real app, you're going to want to only be making these changes in your production configuration settings, but for now we're just hacking at a dummy app.
+
+First, change the value of 'default' in app/config/database.php to 'pgsql'.
+
+```php
+'default'=>'pgsql',
+```
+
+Set the following at the top of your database.php above the return values:
+
+```php
+$url = parse_url(getenv("DATABASE_URL"));
+
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
+```
+
+Then change your pgsql entry in that same file to be the following:
+
+```php
+'pgsql' => array(
+        'driver'   => 'pgsql',
+        'host'     => $host,
+        'database' => $database,
+        'username' => $username,
+        'password' => $password,
+        'charset'  => 'utf8',
+        'prefix'   => '',
+        'schema'   => 'public',
+    ),
+```
+
+That is it! Commit and we are ready to push our changes.
+
+```bash
+$ git add .
+$ git commit -m "Convert to use Heroku PostgreSQL database"
+$ git push heroku master
+```
 
 
 
