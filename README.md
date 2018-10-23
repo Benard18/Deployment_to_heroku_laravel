@@ -236,3 +236,11 @@ $ heroku open
 This process is really confusing but I hope will help in your endevours.
 
 Remember heroku does not offer support for media files in the free tier subscription so find some where else to store those e.g UploadCare(I am making a [documentation](https://github.com/Benard18/Laravel-CloudShare-Intergration) based on this).
+
+
+# Very Helpful Articles
+
++[Configuring Postgre](https://mattstauffer.com/blog/laravel-on-heroku-using-a-postgresql-database/)
++[Getting started with heroku laravel](https://devcenter.heroku.com/articles/getting-started-with-laravel)
++[Best Practices](https://devcenter.heroku.com/articles/getting-started-with-laravel#best-practices)
++[Further Reading](https://devcenter.heroku.com/articles/getting-started-with-laravel#further-reading)
